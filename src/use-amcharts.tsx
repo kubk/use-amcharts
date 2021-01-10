@@ -15,6 +15,7 @@ export const useAmcharts = <T extends Sprite>(
     const chart = create(amchartsElRef.current, classType);
     configure(chart);
     return () => chart.dispose();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [amchartsElRef.current]);
 
   return { amchartsElRef };

@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { WeightMeasurementChart } from "../stories/weight-measurement-chart";
+import { WeightMeasurementChart } from '../stories/weight-measurement-chart';
 
 describe('WeightMeasurementChart', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<WeightMeasurementChart
+    ReactDOM.render(
+      <WeightMeasurementChart
         data={[
           {
             date: new Date(2018, 3, 20),
@@ -36,7 +37,9 @@ describe('WeightMeasurementChart', () => {
             value: 54.3,
           },
         ]}
-    />, div);
+      />,
+      div
+    );
     ReactDOM.unmountComponentAtNode(div);
   });
 });
