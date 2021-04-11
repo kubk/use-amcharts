@@ -7,6 +7,17 @@ React hook for working with Amcharts 4 library. Supports TypeScript type-inferen
 `npm i use-amcharts`
 
 ### Usage
+```tsx
+export const Chart = () => {
+  const { amchartsElRef } = useAmcharts(am4charts.XYChart, (chart) => {
+    // Configure chart...
+  });
+
+  return <div ref={amchartsElRef} />;
+};
+```
+
+### Runnable example
 
 ```tsx
 let data = [];
@@ -38,7 +49,7 @@ export const Chart = () => {
 };
 ```
 
-### Example
+### Storybook
 
 To run Storybook example:
 - `git clone`
