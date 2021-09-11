@@ -4,7 +4,9 @@ React hook for working with Amcharts 4 library. Supports TypeScript type-inferen
 
 ### Installation
 
-`npm i use-amcharts`
+```
+npm i use-amcharts
+```
 
 ### Usage
 ```tsx
